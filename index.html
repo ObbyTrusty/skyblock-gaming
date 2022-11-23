@@ -1,13 +1,313 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Skyblock Gaming Utilities</title>
-    <link rel="stylesheet" href="css/style.css">
+    <meta charset="utf-8"/>
+    <title>Skyblock Gaming</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+
+    <!-- Favicon -->
+    <link href="resources/icon.png" rel="icon"/>
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com"/>
+    <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+            rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+            rel="stylesheet"
+    />
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet"/>
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet"/>
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet"/>
 </head>
-<body>
-<script src="scripts/index.js"></script>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="51">
+<!-- Video Modal Start -->
+<div
+        class="modal fade"
+        id="videoModal"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+>
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button
+                        type="button"
+                        class="close"
+                        data-dismiss="modal"
+                        aria-label="Close"
+                >
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <!-- 16:9 aspect ratio -->
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe
+                            class="embed-responsive-item"
+                            src=""
+                            id="video"
+                            allowscriptaccess="always"
+                            allow="autoplay"
+                    ></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Video Modal End -->
+
+<!-- Header Start -->
+<div
+        class="container-fluid bg-primary d-flex align-items-center mb-5 py-5"
+        id="home"
+        style="min-height: 100vh"
+>
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-5 px-5 pl-lg-0 pb-5 pb-lg-0">
+                <img
+                        class="img-fluid w-100 rounded-circle shadow-sm"
+                        src="resources/icon.png"
+                        alt=""
+                />
+            </div>
+            <div class="col-lg-7 text-center text-lg-left">
+                <h3 class="text-white font-weight-normal mb-3">Hi, I'm</h3>
+                <h1
+                        class="display-3 text-uppercase text-primary mb-2"
+                        style="-webkit-text-stroke: 2px #ffffff"
+                >
+                    Skyblock Gaming Utilities
+                </h1>
+                <h1
+                        class="typed-text-output d-inline font-weight-lighter text-white"
+                ></h1>
+                <div class="typed-text d-none">
+                    Open-Source, Multi-Purpose
+                </div>
+                <p style="color: #ffffff">
+                    <strong> Hypixel Skyblock Discord Utility Bot </strong>
+                </p>
+                <div
+                        class="d-flex align-items-center justify-content-center justify-content-lg-start pt-5"
+                >
+                    <a
+                            href="https://discord.com/api/oauth2/authorize?client_id=1037741229154238495&permissions=139989403728&scope=bot%20applications.commands"
+                            class="btn btn-outline-light mr-5"
+                            target="_blank"
+                    >Invite Me!</a
+                    >
+                    <a
+                            href="https://discord.gg/BAyAPhExp2"
+                            class="btn btn-outline-light mr-5"
+                            target="_blank"
+                    >Discord Server</a
+                    >
+                    <a
+                            href="https://github.com/ObbyTrusty/Skyblock-Gaming-Utilities"
+                            class="btn btn-outline-light mr-5"
+                            target="_blank"
+                    >Github Repository</a
+                    >
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Header End -->
+
+<!-- About Start -->
+<div class="container-fluid py-5" id="about-bot">
+    <div class="container">
+        <div
+                class="position-relative d-flex align-items-center justify-content-center"
+        >
+            <h1
+                    class="display-1 text-uppercase text-white"
+                    style="-webkit-text-stroke: 1px #dee2e6"
+            >
+                About
+            </h1>
+            <h1 class="position-absolute text-uppercase text-primary">
+                About the Bot
+            </h1>
+        </div>
+        <div>
+            <div style="text-align: center">
+                <p>
+                    Skyblock Gaming Utilities is a Hypixel Skyblock discord bot developed from the ground up with
+                    tranparency and ease of use in mind. It has a public repository where all the code is laid out transparently and
+                    can be read by anyone with an internet connection and some basic python knowledge.
+                </p>
+                <p>
+                    Contributing to the bot in the form of bug fixes or new features is as simple as creating a new pull
+                    request in the repository!
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- About End -->
+
+<!-- Qualification Start -->
+<div class="container-fluid py-5" id="qualification">
+    <div class="container">
+        <div
+                class="position-relative d-flex align-items-center justify-content-center"
+        >
+            <h1
+                    class="display-1 text-uppercase text-white"
+                    style="-webkit-text-stroke: 1px #dee2e6"
+            >
+                Quality
+            </h1>
+            <h1 class="position-absolute text-uppercase text-primary">
+                Features
+            </h1>
+        </div>
+            <div class="col-lg-6" style="margin: auto">
+                <div class="border-left border-primary pt-2 pl-4 ml-2">
+                    <div class="position-relative mb-4">
+                        <i
+                                class="far fa-dot-circle text-primary position-absolute"
+                                style="top: 2px; left: -32px"
+                        ></i>
+                        <h5 class="font-weight-bold mb-1">
+                            Anti-Scammer Features
+                        </h5>
+                        <p>
+                            ● /scammer lookup - Check if a player is a known scammer (Powered by Skykings API)
+                        </p>
+                        <p>
+                            ● /scammer guild - Check if a guild has any known scammers (Powered by Skykings API)
+                        </p>
+                        <p>
+                            ● /scammer user - Check if a discord user is a known scammer (BETA)
+                        </p>
+                    </div>
+                    <div class="position-relative mb-4">
+                        <i
+                                class="far fa-dot-circle text-primary position-absolute"
+                                style="top: 2px; left: -32px"
+                        ></i>
+                        <h5 class="font-weight-bold mb-1">Discord Server Features</h5>
+                        <p>
+                            ● /server blacklist - Add a user to the scammer database only specific to the current discord server
+                        </p>
+                        <p>
+                            ● /server whitelist - Remove a user to the scammer database only specific to the current discord server
+                        </p>
+                        <p>
+                            ● /server scammerlist - Lists all users added using /server blacklist
+                        </p>
+                        <p>
+                            ● /server config - List the current configuration of the discord server.
+                        </p>
+                    </div>
+                    <div class="position-relative mb-4">
+                        <i
+                                class="far fa-dot-circle text-primary position-absolute"
+                                style="top: 2px; left: -32px"
+                        ></i>
+                        <h5 class="font-weight-bold mb-1">
+                            Guild Features
+                        </h5>
+                        <p>
+                            ● /guild link - Link a Hypixel Guild to the discord server
+                        </p>
+                        <p>
+                            ● /guild unlink - Unlink a Hypixel Guild from the discord server
+                        </p>
+                        <p>
+                            ● /guild setcountvc - Update a voice channel with the count of the number of players in the linked Hypixel Guild
+                        </p>
+                    </div>
+                    <div class="position-relative mb-4">
+                    <i
+                            class="far fa-dot-circle text-primary position-absolute"
+                            style="top: 2px; left: -32px"
+                    ></i>
+                    <h5 class="font-weight-bold mb-1">
+                        General Features
+                    </h5>
+                    <p>
+                        ● /election - View the current Hypixel Skyblock election
+                    </p>
+                    <p>
+                        ● /mayor - View the current Hypixel Skyblock Mayor
+                    </p>
+                    <p>
+                        ● /verify - Verify and link a discord user and a minecraft player
+                    </p>
+                    <p>
+                        ● /unverify - UnVerify and unlink a discord user and a minecraft player
+                    </p>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Qualification End -->
+
+
+<!-- Footer Start -->
+<div
+        class="container-fluid bg-primary text-white mt-5 py-5 px-sm-3 px-md-5"
+>
+    <div class="container text-center py-5">
+        <div class="d-flex justify-content-center mb-4">
+            <a
+                    class="btn btn-light btn-social mr-2"
+                    href="https://discord.gg/BAyAPhExp2"
+                    target="_blank"
+            ><i class="fab fa-discord"></i>
+            </a>
+            <a
+                    class="btn btn-light btn-social mr-2"
+                    href="https://github.com/ObbyTrusty/Skyblock-Gaming-Utilities"
+                    target="_blank"
+            ><i class="fab fa-github"></i>
+            </a>
+        </div>
+    </div>
+</div>
+<!-- Footer End -->
+
+<!-- Scroll to Bottom -->
+<i class="fa fa-2x fa-angle-down text-white scroll-to-bottom"></i>
+
+<!-- Back to Top -->
+<a href="#" class="btn btn-outline-dark px-0 back-to-top"
+><i class="fa fa-angle-double-up"></i
+></a>
+
+<!-- JavaScript Libraries -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+<script src="lib/typed/typed.min.js"></script>
+<script src="lib/easing/easing.min.js"></script>
+<script src="lib/waypoints/waypoints.min.js"></script>
+<script src="lib/owlcarousel/owl.carousel.min.js"></script>
+<script src="lib/isotope/isotope.pkgd.min.js"></script>
+<script src="lib/lightbox/js/lightbox.min.js"></script>
+
+<!-- Contact Javascript File -->
+<script src="mail/jqBootstrapValidation.min.js"></script>
+<script src="mail/contact.js"></script>
+
+<!-- Template Javascript -->
+<script src="js/main.js"></script>
 </body>
 </html>
