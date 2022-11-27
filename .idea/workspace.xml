@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="476d167a-4f53-4892-ae6e-0ebcd4183dec" name="Changes" comment="Website Version V1.02">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
-    </list>
+    <list default="true" id="476d167a-4f53-4892-ae6e-0ebcd4183dec" name="Changes" comment="Website Version V1.03 Dark Mode" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -64,7 +61,7 @@
       <workItem from="1669238365071" duration="6806000" />
       <workItem from="1669251867791" duration="221000" />
       <workItem from="1669582501502" duration="5000" />
-      <workItem from="1669583988278" duration="232000" />
+      <workItem from="1669583988278" duration="569000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1669238575049</created>
@@ -94,7 +91,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669251906207</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Website Version V1.03 Dark Mode">
+      <created>1669584257432</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1669584257432</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -116,6 +120,7 @@
     <MESSAGE value="Website Version V1.0" />
     <MESSAGE value="Website Version V1.01" />
     <MESSAGE value="Website Version V1.02" />
-    <option name="LAST_COMMIT_MESSAGE" value="Website Version V1.02" />
+    <MESSAGE value="Website Version V1.03 Dark Mode" />
+    <option name="LAST_COMMIT_MESSAGE" value="Website Version V1.03 Dark Mode" />
   </component>
 </project>
